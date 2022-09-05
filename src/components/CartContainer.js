@@ -20,7 +20,7 @@ const CartContainer = () => {
         <h2>買い物かご</h2>
         <div>
           {cartItems.map((item) => {
-            return <CartItem key={item.id} />;
+            return <CartItem key={item.id} {...item} />;
           })}
         </div>
       </header>
